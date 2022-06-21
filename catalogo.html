@@ -1,0 +1,98 @@
+<HTML>
+<HEAD>
+<TITLE>Catalogo</TITLE>
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<SCRIPT languaje="javascript" TYPE="text/javascript">
+
+function show(m){   
+document.getElementById("visualizar").innerHTML="<img width=300px heigth=270px src=catalogo/"+m.lista.options[m.lista.selectedIndex].text+".png class='animated wobble'>";
+}
+
+function anadir(m){
+var select = document.getElementById("lista");
+select.options[select.options.length] = new Option(m.addTo.value);
+}
+
+function del(m){
+m.lista.options[m.lista.selectedIndex] = null;
+
+}
+function roll(m){
+document.getElementById("visualizar").innerHTML="<img width=300px heigth=270px src=catalogo/"+m.lista.options[m.lista.selectedIndex].text+".png id='rotar'>";
+} 
+</SCRIPT>
+</HEAD>
+
+<body bgcolor="#E0E3E6" background="fondo1.png"> 
+ 
+   
+<TABLE width="100%" height="900" border="5">
+ <tr height="15%">
+  <th width="100%" height="15%"colspan="2" bgcolor="#18191A" class="animated flip">     
+   <div>     
+    <img src="tornado.png" width="40px" heigth="40px" align="right" class="animated infinite flip">     
+    <img src="tornado.png" width="40px" heigth="40px" align="left" class="animated infinite flip">
+    <h2 align="center"><font color="white">LICUADORAS S.A</font></h2>
+   </div>
+  </th>     
+ </tr>
+
+ <tr height="75%">
+  <th width="15%" bgcolor="#93D898" class="animated jello">
+   <h2>bienvenido</h2>
+   <H3>Imagenes</H3>
+ <FORM id="lic">
+ <SELECT size="4" name="lista" id="lista">
+ <OPTION>estandar1
+ <OPTION>exprimidor1
+ <OPTION>centrifuga1
+ <OPTION>extractor1
+ <OPTION>industrial1
+ <OPTION>kenwood1
+ <OPTION>orbegozo1
+ <OPTION>mano1
+ <OPTION>oster1
+ </SELECT><br><br> 
+ <input type="button" value="mostrar" onclick="show(this.form);">
+ <input type="button" value="eliminar" onclick="del(this.form);">
+ <input type="button" value="como funciona una licuadora?" onclick="roll(this.form);">
+ <input type="text" name="addTo">
+ <input type="button" value="anadir" onclick="anadir(this.form);">  
+ </FORM>
+   <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="descuento.html">Verificar Descuento</a></li>
+    <li><a href="colores disponibles.html">Colores Disponibles</a></li>
+    <li><a href="catalogo.html">Catalogo</a></li>
+   </ul>
+  </th>
+     
+  <th width="85%" id="visualizar">
+  <h3 class="animated bounceIn">
+  Querido usuario, en la lista que puede ver a su izquierda estan las licuadoras que actualmente vendemos, cada tipo y marca estan enumeradas asi
+  "estandar1" si desea ver mas licuadoras estandar o de cualquier otro tipo, puede escribir en la caja de texto el mismo nombre y cambiar el numero
+  por el que le sigue asi "estandar2", a continuacion clickea (anadir) y luego seleciona la  opcion que anadio y clickea (mostrar), funciona con   todos los nombres de la lista hasta un maximo de 3 asi "estandar3", por que hay 3 ejemplares de cada producto; si desea quitar un producto de la   lista basta con seleccionarlo y clickear (eliminar).
+ </h3>
+  </th>
+ </tr>
+
+ <tr>
+  <th colspan="2" height="15%" bgcolor="#7F83B6">
+   <font size=6 align="left"><h4>contactanos</h4></font>
+   <div width="60px">
+    <h4 align="left">correo:licucolombia@gmail.com</h4>
+    <p align="left">
+    <font size=4>tambien puedes vernos en nuestras redes sociales</font>
+    <font size=2>FACEBOOK</font>
+    <font size=2>INSTAGRAM</font>
+    <font size=2>TWITTER</font>
+    </p>
+    <h4 align="left">Direccion: avenida siempre viva con 3 en la tierra</h4>
+   </div>   
+   <img src="logo1.png" align="rigth" width="50px" heigth="50px" class="animated infinite tada">
+  </th>
+ </tr>
+
+</table>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<HTML>
+<head><title>Colores</title>
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<script languaje="javascript" type="text/javascript">
+var color=["blue","gray","pink","yellow","purple","green","black","silver","red",""]
+function pr(){
+ document.write("<table border=1> <tr>");
+ for(var i=0;i<9;i++){
+ 
+ document.write("<table width=100% border=1><tr>");
+ document.write("<th bgcolor="+color[i]+"><font size=2 color=white>COLOR"+i+"</font></th>");
+ document.write("</tr></table>");
+
+}
+document.write("<a href=index.html>PRINCIPAL</a>");
+}
+
+</script>
+
+
+
+
+</head>
+
+<body bgcolor="#E0E3E6" background="fondo1.png"> 
+ 
+   
+<TABLE width="100%" height="900" border="5">
+ <tr height="15%">
+  <th width="100%" height="15%"colspan="2" bgcolor="#18191A">     
+   <div>     
+    <img src="tornado.png" width="40px" heigth="40px" align="right" class="animated infinite flip">     
+    <img src="tornado.png" width="40px" heigth="40px" align="left" class="animated infinite flip">
+    <h2 align="center"><font color="white">LICUADORAS S.A</font></h2>
+   </div>
+  </th>     
+ </tr>
+
+ <tr height="75%">
+  <th width="15%" bgcolor="#93D898" class="animated hinge">
+   <h3>bienvenido</h3>
+   <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="descuento.html">Verificar Descuento</a></li>
+    <li><a href="colores disponibles.html">Colores Disponibles</a></li>
+    <li><a href="catalogo.html">Catalogo</a></li>
+    </ul>
+  
+  
+</th>
+  <th width="85%"> 
+<form name="col" class="animated infinite bounce">
+<p>Si quiere ver los colores que tenemos disponibles presione el boton</p>
+<button name="col1" onclick="pr()">mirar</button>
+
+</form>
+  </th>
+ </tr>
+
+ <tr>
+  <th colspan="2" height="15%" bgcolor="#7F83B6">
+   <font size=6 align="left"><h4>contactanos</h4></font>
+   <div width="60px">
+    <h4 align="left">correo:licucolombia@gmail.com</h4>
+    <p align="left">
+    <font size=4>tambien puedes vernos en nuestras redes sociales</font>
+    <font size=2>FACEBOOK</font>
+    <font size=2>INSTAGRAM</font>
+    <font size=2>TWITTER</font>
+    </p>
+    <h4 align="left">Direccion: avenida siempre viva con 3 en la tierra</h4>
+   </div>   
+   <img src="logo1.png" align="rigth" width="50px" heigth="50px" class="animated infinite tada">
+  </th>
+ </tr>
+
+</table>
+</body>
+</html>
